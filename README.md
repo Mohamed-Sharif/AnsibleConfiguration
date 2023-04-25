@@ -4,14 +4,7 @@ This repository contains an Ansible playbook that installs and configures Nginx 
 
 ## Getting Started
 
-To use this playbook, you will need to have Ansible installed on your local machine. If you haven't already, you can install it with the following command:
-
-```bash
-sudo apt update
-sudo apt install ansible
-```
-
-Once you have Ansible installed, you can download this repository by running the following command:
+To use this playbook, you will need to have Ansible installed on your local machine.
 
 ```bash
 git clone https://github.com/Mohamed-Sharif/AnsibleConfiguration.git
@@ -37,7 +30,11 @@ This will install and configure Nginx on your server.
 
 ## Roles
 
-This playbook contains a single role called `web`. The `web` role installs and configures Nginx on your server. It does the following:
+This playbook contains a single role called `web`. The template for this rule was created using the following command:
+```bash
+ansible-galaxy init web
+```
+The `web` role installs and configures Nginx on your server. It does the following:
 
 - Installs the Nginx package
 - Copies the `index.html` file to the server
@@ -47,4 +44,6 @@ This playbook contains a single role called `web`. The `web` role installs and c
 ## Testing
 
 To test the playbook, you can use the included `test.yml` playbook. Apply the `playbook.yml` playbook, and then run some basic tests to ensure that Nginx is working correctly.
+```bash
 ansible-playbook -i inventory test.yml
+```
