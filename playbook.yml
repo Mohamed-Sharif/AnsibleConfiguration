@@ -1,0 +1,6 @@
+---
+- name: Install Nginx using web role
+  hosts: web_servers
+  become: true
+  roles:
+    - web

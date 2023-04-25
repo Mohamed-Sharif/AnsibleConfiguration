@@ -1,0 +1,16 @@
+---
+- name: Test web role
+  hosts: web
+  become: true
+  vars:
+    nginx_package_name: nginx
+    file_names:
+      - index.html
+      - styles.css
+  roles:
+    - web
+  tasks:
+    - name: Verify Nginx is running
+      service:
+        name: nginx
+        state: started

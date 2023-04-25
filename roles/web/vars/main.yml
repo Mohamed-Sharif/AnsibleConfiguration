@@ -1,0 +1,7 @@
+---
+# vars file for web
+nginx_package_name: nginx
+template_message: "Welcome to Mohamed Sharif's website"
+file_names:
+  - index.html
+  - styles.css

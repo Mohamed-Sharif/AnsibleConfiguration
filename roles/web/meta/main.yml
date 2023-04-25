@@ -1,0 +1,3 @@
+galaxy_info:
+  author: Mohamed Sharif
+  description: A role to install nginx on hosts defined in the inventory file
