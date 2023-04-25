@@ -12,18 +12,18 @@ git clone https://github.com/Mohamed-Sharif/AnsibleConfiguration.git
 
 ## Usage
 
-To use this playbook, you will need to update the `hosts` file with the IP address of the server that you want to configure. You can do this by running the following command:
+To use this playbook, you will need to update the `inventory` file with the IP address of the server that you want to configure. You can do this by running the following command:
 
 ```bash
-nano hosts
+nano inventory
 ```
 
-Then, replace the IP address in the file with the IP address of your server.
+Then, replace the IP address in the file with the IP address of your servers.
 
 Next, you can run the playbook with the following command:
 
 ```bash
-ansible-playbook playbook.yml -i hosts
+ansible-playbook playbook.yml
 ```
 
 This will install and configure Nginx on your server.
